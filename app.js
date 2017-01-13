@@ -43,11 +43,10 @@ function draw(e)	{
 	ctx.stroke();
 }
 
-//FROM: https://enlight.ml/web-paint
+//END FROM: https://enlight.ml/web-paint
 
-var clearbutton = document.getElementbyID('clear');
-clearbutton.addEventListener("click", clear)
+//MY ADDITIONS
 
-function clear() {
-	ctx.clearRect(0, 0, canvas.width, canvas,height)
+function clearFunction(){
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
