@@ -24,7 +24,6 @@ function draw(e)	{
 
 	ctx.beginPath();
 
-	ctx.lineWidth = 20;
 	ctx.lineCap = 'round';
 	ctx.strokeStyle = color;
 
@@ -37,14 +36,18 @@ function draw(e)	{
 
 //END FROM: https://enlight.ml/web-paint
 
-//clear function
 
+//clear function
 function clearFunction(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-//color picker - from http://jsfiddle.net/mShET/1/ [http://stackoverflow.com/questions/8729040/create-a-color-picker-similar-to-photoshops-using-javascript-and-html-canvas]
+//line width function - http://stackoverflow.com/questions/31365387/how-to-change-the-canvas-linewidth-with-html-range-input-slider
+function changeLineWidth(brushSize) {
+   ctx.lineWidth = brushSize;
+}
 
+//color picker - from http://jsfiddle.net/mShET/1/ [http://stackoverflow.com/questions/8729040/create-a-color-picker-similar-to-photoshops-using-javascript-and-html-canvas]
 PICKER = {
     mouse_inside: false,
 

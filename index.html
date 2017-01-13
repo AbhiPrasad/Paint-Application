@@ -13,6 +13,9 @@
 <canvas id="draw" width="1200%" height="400%" style="border: 1px solid"></canvas>
 <input id="hex" placeholder="enter hex color" type="color-picker" ></input>
 <button id="clearbtn" type="button" onclick="clearFunction()"> CLEAR </button>
+<input type="range" name="brushsize" min="0" max="20"
+ id="brushSlider" step="1" value="5" onchange="changeLineWidth(this.value);">
+<p id="demo"></p>
 
 <script src="app.js"></script>
 </html>
