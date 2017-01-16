@@ -1,0 +1,43 @@
+body {
+    overflow:hidden;
+}
+
+@media (min-width: 768px) {
+  #content-container {
+    position:relative;
+  }
+  #main {
+    position:absolute;
+    top:0;
+    right:15px;
+  }
+  #menu-2 {
+    float:none;
+  }
+}
+
+/* from http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3 */
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+/* END FROM */
+
+/*
+#hex {
+    display:inline-block;
+    vertical-align:top;
+    position: relative;
+}
+
+#draw {
+    display:inline-block;
+    position: relative;
+}
+
+#brushSizeSlider {
+    display:inline-block;
+    vertical-align:top;
+    position: relative;
+}
+*/

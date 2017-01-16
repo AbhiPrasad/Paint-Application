@@ -7,15 +7,28 @@
        	Web Paint!
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
-<canvas id="draw" width="1200%" height="400%" style="border: 1px solid"></canvas>
-<input id="hex" placeholder="enter hex color" type="color-picker" ></input>
-<button id="clearbtn" type="button" onclick="clearFunction()"> CLEAR </button>
-<input type="range" name="brushsize" min="0" max="20"
- id="brushSlider" step="1" value="5" onchange="changeLineWidth(this.value);">
-<p id="demo"></p>
+<body>
 
-<script src="app.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pull-left" id="menu-1">
+                <canvas id="draw" width="900%" height="500%" style="border: 1px solid"></canvas>
+            </div>
+            <div class="col-md-6 " id="main">
+                <input id="hex" placeholder="enter hex color" type="color-picker" ></input>
+                <button id="clearbtn" type="button" onclick="clearFunction()"> CLEAR </button>
+                <input id="brushSizeSlider" type="range" name="brushsize" min="0" max="20" id="brushSlider" step="1" value="5" onchange="changeLineWidth(this.value);">
+            </div>
+        </div>
+    </div>
+
+<script src="js/app.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
 </html>
